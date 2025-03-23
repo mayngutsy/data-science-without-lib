@@ -1,0 +1,93 @@
+body{
+    font-family: Ariel;
+    background-color: skyblue;
+    overscroll-behavior:none;
+}
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: 2px 10px 2px 10px;
+    height:22px;
+    border-radius:5px;
+    background-color: navy;
+}
+button:hover{
+    background-color: mediumblue;
+}
+button:disabled,
+button:disabled:hover{
+    background-color: grey;
+    cursor: default;
+}
+.row{
+    display:flex;
+}
+.thumb{
+    width:100%;
+}
+.rowLabel{
+    flex:2 1 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+.sampleContainer{
+    flex:1 1 0;
+    background-color: white;
+    text-align: center;
+    border-radius:10px;
+    margin: 1px;
+    overflow:hidden;
+}
+
+.blur{
+    filter:blur(5px);
+}
+
+.emphasize{
+    background-color:yellow !important;
+}
+
+#container{
+    width:calc(100% - 400px);
+}
+
+#chartContainer{
+    position: fixed;
+    right:0px;
+    top:50%;
+    transform:translate(0,-50%)
+
+}
+
+#inputContainer{
+    position:fixed;
+    right:500px;
+    top:50%;
+    transform:translate(0, -50%);
+    text-align:center;
+    margin: 10px;
+}
+
+#controlPanel{
+    position:fixed;
+    right: 0px;
+    top: 10px;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+}
+
+#predictedLabelContainer{
+    color: white;
+    font-size: 30px;
+    position: relative;
+}
